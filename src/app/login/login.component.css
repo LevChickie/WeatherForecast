@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: #e4f9ff;
+    font-family: 'Times New Roman', Times, serif;
+    color:  #8f8f8f;
+}
+.login-text {
+    padding: 5% 10% 3%;
+}
+.login-input{
+    padding: 3%;
+}
+.label-input{
+    font-size: 1.3rem;
+}

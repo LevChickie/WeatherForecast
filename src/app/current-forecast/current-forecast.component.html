@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="current-forecast.component.css">
+</head>
+<body>
+    <div  *ngIf="forecast">
+        <mat-tab-group mat-stretch-tabs class="cityForecast"  (selectedTabChange)="changeTab($event)">
+            <mat-tab *ngFor="let forecast of forecastList" label="{{forecast.name}}">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Id: {{forecast.id}}</p>
+                    <p id="city-name">Name: {{forecast.name}}</p>
+                    <p>Time of forecasted data: {{date.toUTCString()}}</p>
+                    <p>Weather: {{weather}}</p>
+                    <p>Wind speed: {{windSpeed}} meter/sec</p>
+                    <p>Wind degree: {{windDegree}}°</p>
+                    <p>Humidity: {{humidity}}%</p>
+                    <p>Pressure: {{pressure}} hPa</p>
+                    <p>Visibility: {{forecast.visibility}} meter</p>
+                </div>
+                <div class="col-lg-6">
+                    <app-forecast-fivedays></app-forecast-fivedays>
+                </div>
+            </div>
+            </mat-tab>
+            <mat-tab label="+">
+                <div class="input-field">
+                    <h2 class="add-new-city">Add new city to your forecasting list</h2>
+                    <input [(ngModel)]="addNewCity" placeholder="name of new city"/>
+                    <button class="btn btn-dark" (click)="addNew(addNewCity)">Add new city</button>
+                </div>
+            </mat-tab>
+          </mat-tab-group>    
+    </div>
+</body>
+

@@ -1,0 +1,23 @@
+<head>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="login-text">
+        <h1>Login is needed:</h1>
+    </div>
+    <div class="login-form">
+        <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
+            <article class="login-input">
+                <div>
+                    <label class="label-input">Username:</label>
+                    <input type="text" name="username" ngModel  placeholder="username here" #usernameInput="ngModel" required text/>
+                </div>
+                <div>
+                    <label class="label-input">Password:</label>
+                    <input type="password" name="password" ngModel placeholder="password here" #passwordInput="ngModel" required password/>    
+                </div>
+            </article>
+            <button class="btn btn-dark btn-lg" type="submit">Login</button>
+        </form>
+    </div>
+</body>

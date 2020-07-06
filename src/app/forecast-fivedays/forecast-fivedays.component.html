@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="forecast-fivedays.component.css">
+</head>
+<body>
+    <ngx-charts-line-chart class="graph" *ngIf="dataForGraph"
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="dataForGraph"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [autoScale]="autoScale"
+    [timeline]="timeline">
+</ngx-charts-line-chart>
+</body>

@@ -1,0 +1,25 @@
+body{
+    text-align: left;
+    background-color: #e4f9ff;
+}
+p{
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #342b38;
+
+}
+p#city-name{
+    font-weight: bold;
+}
+.row{
+    padding: 3% 3% 10%;
+}
+.input-field{
+    text-align: center;
+    padding: 5%;
+}
+.add-new-city{
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #342b38;
+}

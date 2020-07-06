@@ -1,0 +1,14 @@
+.app-title{
+ font-family: serif;  
+ font-weight: bold;
+ font-size: 3rem; 
+ padding: 5% 10%;
+}
+body{
+    text-align: center;
+    background-color: #c2e7f5;
+    color: #8f8f8f;
+}
+h1{
+    color: #222831;
+}
