@@ -1,5 +1,5 @@
-# EncoProject
-
+# Weather forecast project
+A projetct that is able to give information to the user about the current weather. Login is needed, you can login with the default admin / admin combination.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
 ## Development server
